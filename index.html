@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Vlaundry</title>
+		<link rel="icon" href="images/favicon.jpg">
+		<link rel="shortcut icon" href="images/favicon.jpg" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/form.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+
+		<script>
+
+
+                             /* Slidder wrapper sent to js tms */
+
+
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,      //'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+
+
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+			
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+		
+	</head>
+	<body class="">
+
+
+
+                             <!--                     header                          -->
+
+		<header class="page1">
+			<div class="container_12">
+				<div class="grid_12">
+					<h1><a href="index.html" onClick="goToByScroll('page1'); return false;"><img src="images/logo-1.png"   alt="Vlaundry"></a></h1>
+					<div class="menu_block">
+						<nav class="">
+							<ul class="sf-menu">
+								<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
+								<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">About</a><strong class="hover"></strong></li>
+								<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Services</a> <strong class="hover"></strong></li>
+								<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Clients</a> <strong class="hover"></strong></li>
+								<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacts</a> <strong class="hover"></strong></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+
+<!--=======content================================-->
+		<div id="page1" class="content">
+			<div class="ic"></div>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slider_wrapper">
+						<ul class="items">
+							<li>
+								<img src="images/bodypic.jpg" alt="">
+								<div class="caption banner">
+									<h2 class="bodypic">Let Us Wash For U</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/bodypic1.jpg" alt="">
+								<div class="caption banner">
+									<h2 class= "bodypic1">Recyclable Bags !! Eco-Friendly</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/bodypic2.jpg" alt="">
+								<div class="caption banner">
+									<h2 class="bodypic2">Best Machines To Keep Clothes Fit</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/bodypic3.jpg" alt="">
+								<div class="caption banner">
+									<h2 class="bodypic3">Assured Services And Quality</h2>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="socials">
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+					<br>
+					<br>
+					<br>
+					<marquee><img src="images/shirt2.png" align= "center" height= 300 width= 600></marquee>
+				</div>
+			</div>
+		</div>
+		<div id="page2" class="content" background-image=url("images/lhouse.jpg")>
+
+			
+				
+			<div class="container_12">
+				<div class="grid_12">
+					<center> <font type="tango" color= "black"><h1> Are you a member yet? then have a look <br><br>
+						<a href="registration.php">           Sign Up  </a>
+						<a href="login.php"> Sign In</a>
+					</h1><br><br><p><p>
+					</center>
+				
+					<div class="slogan">
+						<h3>Only Professional <a onClick="goToByScroll('page3'); return false;" href="#"><span>Services</span></a> for Our <a onClick="goToByScroll('page4'); return false;" href="#"><em>Clients</em></a></h3>
+						<div class="text1">
+							We are bunch of professionals who have started <br> 
+							to provide easy wash for you. We are college student  <br>
+                            who have started in 2015.<br>
+						</div>
+					</div>
+				</div>
+				
+				<div class="grid_31">
+					<div class="box maxheight">
+						<img src="images/box_img1.jpg" alt="">
+						<div class="text2"><a href="#">GAURAV</a></div>CEO
+						<div class="socials1">
+							<a href="www.facebook.com/ggsingh22"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="grid_31">
+					<div class="box maxheight">
+						<img src="images/box_img2.jpg" alt="">
+						<div class="text2"><a href="#">Arijit Das</a></div>EXECUTIVE DIRECTOR
+						<div class="socials1">
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+		<div id="page3" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Our Services</h3>
+						<div class="text3">
+							We provide service of washing at Cheapest Rate and Best Quality.<br> <br><br>
+							We are all around you with our best services just at your door steps.<br><br><br>
+							We wash all kind of clothes quickly and get you delivered safe and fast too.<br><br><br>
+							We use highest quality of detergent for you.<br><br>
+							We also have varieties of washing of clothes.<br><br>
+							We support eco-friendliness so we do eco-frindly washing.<br><br><br>
+							<img src="images/bag.jpg" alt="">
+							We carry paper bags :)<br>
+						</div>
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="images/img1.png" alt="">
+						<div class="text1"><a href="#">Best Wash</a></div>You just get a your clothes washed like home in no time.
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="images/img2.png" alt="">
+						<div class="text1"><a href="#">Premium Service</a></div>If you are in hurry or you need best care for your <br>
+						                                                        cloth then be our premium member.
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="images/img3.jpg" alt="">
+						<div class="text1"><a href="#">Fast</a></div>We are at our doorstep fast and return it clean fast too.
+					</div>
+				</div>
+				<div class="grid_3">
+					<div class="box maxheight1">
+						<img src="images/img4.jpg" alt="">
+						<div class="text1"><a href="#">Category Cashing</a></div>We wash all types of clothes of men and women.
+					</div>
+				</div>
+			</div>
+
+			<div id="price" class="price container">
+
+      <h3><p><p><img class="hanger" src= 'images/hanger-small.png'>Prices </h3>
+      <font size=5px; color="black" face ="Geneva">
+        <div class="table" bgcolor="white">       
+                    <table class="price" align ="center">
+                    <colgroup>
+                        <col width="65%">
+                        <col width="35%">
+                    </colgroup>
+                        <tbody><tr>
+                            <th colspan="5" bgcolor="red" ><span>Wash & Iron &nbsp;(only Iron - Rs.6/cloth)</span></th>
+                        </tr>
+                        <tr>
+                            <td bgcolor="pink">Shirts</td>
+                            <td bgcolor="pink">Rs.19 &nbsp; / cloth</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="pink">Pants</td>
+                             <td bgcolor="pink">Rs.19 &nbsp; / cloth</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="pink">Salwar</td>
+                             <td bgcolor="pink">Rs.19 &nbsp; / cloth</td>
+                        </tr>
+                    </tbody></table>     <p><br><br>       
+                </div>
+
+                <div class="table">
+                    <table class="price" align ="center">
+                    <colgroup>
+                        <col width="65%">
+                        <col width="35%">
+                    </colgroup>
+                        <tbody><tr>
+                            <th colspan="5" bgcolor="red">Dry Cleaning</th>
+                        </tr>
+                        <tr>
+                            <td bgcolor="pink">Suits</td>
+                            <td bgcolor="pink">Rs. 290 &nbsp; / cloth</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="pink">Saree</td>
+                            <td bgcolor="pink">Rs. 190 &nbsp; / cloth</td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="pink">Shirt / Trouser</td>
+                            <td bgcolor="pink">Rs. 60 &nbsp; / cloth</td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </font><br><br><b><h2><a href="price.html"> Click here for full prices</a><b></h2>
+                </br></br>
+                </br>
+               
+</div>
+
+		</div>
+		<div id="page4" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<h3>Our Clients</h3>
+				</div>
+				<div class="companies">
+					<div class="grid_3">
+						<img src="images/logo1.jpg" alt="">
+						<div class="text1">Company Name</div>We try to bring smile first and then serve you.
+						<br>
+						<a href="#">Go to Site</a>
+					</div>
+					<div class="grid_3">
+						<img src="images/logo2.jpg" alt="">
+						<div class="text1">Company Name</div>Your Dream Our Motto.
+						<br>
+						<a href="#">Go to Site</a>
+					</div>
+					<div class="grid_3">
+						<img src="images/logo3.jpg" alt="">
+						<div class="text1">Company Name</div>Come have a ride with us.
+						<br>
+						<a href="#">Go to Site</a>
+					</div>
+					<div class="grid_3">
+						<img src="images/logo4.jpg" alt="">
+						<div class="text1">Company Name</div> We try to bring smile first and then serve you.
+						<br>
+						<a href="#">Go to Site</a>
+					</div>
+					<div class="clear"></div>
+					<div class="grid_3">
+						<img src="images/logo5.jpg" alt="">
+						<div class="text1">Company Name</div>Your Dream Our Motto.
+						<a href="#">Go to Site</a>
+					</div>
+					<div class="grid_3">
+						<img src="images/logo6.jpg" alt="">
+						<div class="text1">Company Name</div>We try to bring smile first and then serve you.
+						<br>
+						<br>
+						<a href="#">Go to Site</a>
+					</div>
+					<div class="grid_3">
+						<img src="images/logo7.jpg" alt="">
+						<div class="text1">Company Name</div>Come have a ride with us.
+						<br>
+						<br>
+						<a href="#">Go to Site</a>
+					</div>
+					<div class="grid_3">
+						<img src="images/logo8.jpg" alt="">
+						<div class="text1">Company Name</div>Your Dream Our Motto.
+						<a href="#">Go to Site</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page5" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Get in Touch</h3>
+						<div class="text1">
+							Give us your feedback each and everytime.
+							We hope to serve you well.
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="map">
+					<div class="grid_3">
+						<div class="text1">Address</div>
+						<address>
+							<dl>
+								<dt>Vlaundry Inc.<br>
+								8901 Sudha Sadan,<br>
+								Buddha Colony, Patna-800001,Bihar.
+								</dt>
+								<dd><span>Freephone:</span>+91 7408987418</dd>
+								<dd><span>Telephone:</span>+91 9795911331</dd>
+								<dd><span>FAX:</span>+1 800 889 9898</dd>
+								<dd>E-mail: <a href="#" class="link-1">mail@vlaudry.com</a></dd>
+								<dd>Skype: <a href="#" class="link-1">@vlaundry</a></dd>
+							</dl>
+						</address>
+					</div>
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="copy">
+						<a onClick="goToByScroll('page1'); return false;" href="#"><img src="images/logo-1.png" alt="" height=25px width=60px></a>  &copy; 2015| <a href="#">Privacy Policy</a> <br> Website designed by <a href="#" rel="nofollow">Gaurav</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</body>
+</html>

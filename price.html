@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Vlaundry</title>
+		<link rel="icon" href="images/favicon.jpg">
+		<link rel="shortcut icon" href="images/favicon.jpg" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/form.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,//'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="container_12">
+				<div class="grid_12">
+					<h1><a href="index.html" onClick="goToByScroll('page1'); return false;"><img src="images/logo-1.png"   alt="Vlaundry"></a></h1>
+					<div class="menu_block">
+						<nav class="">
+							<ul class="sf-menu">
+								<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Here are you prices :)</a> <strong class="hover"></strong></li>
+								
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+
+
+
+
+    <div class="page-content inset" align="center" >
+       
+        <div class="row" align="center">
+        	<div style="width:1250px" align="center"> <marquee  direction="up" "scrollamount="3" bgcolor="green" border='1em'>  Scrolling text up!
+
+            
+
+      <div class="prices-body" align="center">
+
+       <div class="prices-container" align="center">
+          
+            <div class="clearfix" align="center"></div>
+
+            <div class="clear" align="center"></div>
+
+            <div id="mixitup-container" class="price-container" style="overflow: hidden;">
+
+              
+
+              <div class="mix category-lp popular" data-bindattr-16="16" data-myorder="2" data-bindattr-17="17" style="display: inline-block;">
+                  <h3>
+                    <div class="item-text" >Shirt/T-Shirt/Kurta</div>
+                    
+                  </h3>
+
+                  <div class="pricing_image_wrapper">
+
+                    <img src="http://farm6.staticflickr.com/5612/15453644776_dc936dde38_b.jpg">
+
+                    <div class="pricing_text">
+
+                      <div id="wash"> 
+                        <h4>Wash & Iron</h4>
+                        Rs.19
+                      </div>
+
+                      <div id="dryclean"> 
+                        <h4>Dry Cleaning</h4>
+                        Rs.60
+
+                      </div>
+
+                    </div> 
+
+                  </div>
+                  
+                  <div class="gap"></div>
+              </div>
+
+              
+
+              <div class="mix category-lp popular" data-bindattr-16="16" data-myorder="2" data-bindattr-17="17" style="display: inline-block;">
+                  <h3>
+                    <div class="item-text">Jeans/Trouser/Pyjama</div>
+                    
+                  </h3>
+
+                  <div class="pricing_image_wrapper">
+
+                    <img src="http://farm4.staticflickr.com/3947/15473596691_78300743be_b.jpg">
+
+                    <div class="pricing_text">
+
+                      <div id="wash"> 
+                        <h4>Wash & Iron</h4>
+                        Rs.19
+                      </div>
+
+                      <div id="dryclean"> 
+                        <h4>Dry Cleaning</h4>
+                        Rs.60
+
+                      </div>
+
+                    </div> 
+
+                  </div>
+                  
+                  <div class="gap"></div>
+              </div>
+
+              
+
+              <div class="mix category-lp popular" data-bindattr-16="16" data-myorder="2" data-bindattr-17="17" style="display: inline-block;">
+                  <h3>
+                    <div class="item-text">Salwar/Women's-Top</div>
+                    
+                  </h3>
+
+                  <div class="pricing_image_wrapper">
+
+                    <img src="https://c2.staticflickr.com/4/3939/15694720452_15338f2fb0_m.jpg">
+
+                    <div class="pricing_text">
+
+                      <div id="wash"> 
+                        <h4>Wash & Iron</h4>
+                        Rs.19
+                      </div>
+
+                      <div id="dryclean"> 
+                        <h4>Dry Cleaning</h4>
+                        Rs.60
+
+                      </div>
+
+                    </div> 
+
+                  </div>
+                  
+                  <div class="gap"></div>
+              </div>
+
+              
+
+              <div class="mix category-lp popular" data-bindattr-16="16" data-myorder="2" data-bindattr-17="17" style="display: inline-block;">
+                  <h3>
+                    <div class="item-text">kameez/Skirt/Women's-bottom</div>
+                    
+                  </h3>
+
+                  <div class="pricing_image_wrapper">
+
+                    <img src="https://c2.staticflickr.com/4/3938/15480209139_8dd350a71f_m.jpg">
+
+                    <div class="pricing_text">
+
+                      <div id="wash"> 
+                        <h4>Wash & Iron</h4>
+                        Rs.19
+                      </div>
+
+                      <div id="dryclean"> 
+                        <h4>Dry Cleaning</h4>
+                        Rs.60
+
+                      </div>
+
+                    </div> 
+
+                  </div>
+                  
+                  <div class="gap"></div>
+              </div>
+
+              
+
+              <div class="mix category-lp popular" data-bindattr-16="16" data-myorder="2" data-bindattr-17="17" style="display: inline-block;">
+                  <h3>
+                    <div class="item-text">Short</div>
+                    
+                  </h3>
+
+                  <div class="pricing_image_wrapper">
+
+                    <img src="https://c2.staticflickr.com/6/5598/15667095495_2d1c2d9ebf_m.jpg">
+
+                    <div class="pricing_text">
+
+                      <div id="wash"> 
+                        <h4>Wash & Iron</h4>
+                        Rs.19
+                      </div>
+
+                      <div id="dryclean"> 
+                        <h4>Dry Cleaning</h4>
+                        Rs.60
+
+                      </div>
+
+                    </div> 
+
+                  </div>
+                  
+                  <div class="gap"></div>
+              </div>
+
+              
+
+              <div class="mix category-lp popular" data-bindattr-16="16" data-myorder="2" data-bindattr-17="17" style="display: inline-block;">
+                  <h3>
+                    <div class="item-text">Scarf/Dupatta/Blouse</div>
+                    
+                  </h3>
+
+                  <div class="pricing_image_wrapper">
+
+                    <img src="https://c2.staticflickr.com/4/3950/15073173874_fa21f49d79_m.jpg">
+
+                    <div class="pricing_text">
+
+                      <div id="wash"> 
+                        <h4>Wash & Iron</h4>
+                        Rs.19
+                      </div>
+
+                      <div id="dryclean"> 
+                        <h4>Dry Cleaning</h4>
+                        Rs.60
+
+                      </div>
+
+                    </div> 
+
+                  </div>
+                  
+                  <div class="gap"></div>
+              </div>
+
+              
+
+              <div class="mix category-lp popular" data-bindattr-16="16" data-myorder="2" data-bindattr-17="17" style="display: inline-block;">
+                  <h3>
+                    <div class="item-text">Women's Fancy Dress</div>
+                    
+                  </h3>
+
+                  <div class="pricing_image_wrapper">
+
+                    <img src="https://c2.staticflickr.com/8/7481/15507251289_88d5429803_m.jpg">
+
+                    <div class="pricing_text">
+
+                      <div id="wash"> 
+                        <h4>Wash & Iron</h4>
+                        Rs.50
+                      </div>
+
+                      <div id="dryclean"> 
+                        <h4>Dry Cleaning</h4>
+                        Rs.90
+
+                      </div>
+
+                    </div> 
+
+                  </div>
+                  
+                  <div class="gap"></div>
+              </div>
+
+              
+
+              <div class="mix category-lp popular" data-bindattr-16="16" data-myorder="2" data-bindattr-17="17" style="display: inline-block;">
+                  <h3>
+                    <div class="item-text">Sweater/Hoodie/Jacket</div>
+                    
+                  </h3>
+
+                  <div class="pricing_image_wrapper">
+
+                    <img src="https://c2.staticflickr.com/6/5602/15480209919_22144811d6_m.jpg">
+
+                    <div class="pricing_text">
+
+                      <div id="wash"> 
+                        <h4>Wash & Iron</h4>
+                        Rs.60
+                      </div>
+
+                      <div id="dryclean"> 
+                        <h4>Dry Cleaning</h4>
+                        Rs.140
+
+                      </div>
+
+                    </div> 
+
+                  </div>
+                  
+                  <div class="gap"></div>
+              </div>
+
+              
+
+              <div class="mix category-lp popular" data-bindattr-16="16" data-myorder="2" data-bindattr-17="17" style="display: inline-block;">
+                  <h3>
+                    <div class="item-text">Saree-silk</div>
+                    
+                  </h3>
+
+                  <div class="pricing_image_wrapper">
+
+                    <img src="http://farm3.staticflickr.com/2947/15289839329_1d95010124_b.jpg">
+
+                    <div class="pricing_text">
+
+                      <div id="wash"> 
+                        <h4>Wash & Iron</h4>
+                        Rs.60
+                      </div>
+
+                      <div id="dryclean"> 
+                        <h4>Dry Cleaning</h4>
+                        Rs.190
+
+                      </div>
+
+                    </div> 
+
+                  </div>
+                  
+                  <div class="gap"></div>
+              </div>
+       </marquee></div>
+
+
+<!--=======content================================-->
+		
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="copy">
+						<a onClick="goToByScroll('page1'); return false;" href="#"><img src="images/logo-1.png" alt="" height=25px width=60px></a>  &copy; 2015| <a href="#">Privacy Policy</a> <br> Website designed by <a href="#" rel="nofollow">Gaurav</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</body>
+</html>
